@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Hazard</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Report Hazard</h1>
+        <form id="report-hazard-form">
+            <input type="text" id="hazard-type" name="hazardType" placeholder="Hazard Type" required />
+            <textarea id="hazard-description" name="description" placeholder="Description" required></textarea>
+            <input type="text" id="hazard-location" name="location" placeholder="Location" required />
+            <button type="submit">Submit</button>
+        </form>
+        <div id="success-message" style="display:none;">Hazard reported successfully!</div>
+    </div>
+    <script src="/js/hazard.js"></script>
+</body>
+</html>

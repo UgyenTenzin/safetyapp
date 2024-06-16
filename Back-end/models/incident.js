@@ -1,11 +1,22 @@
-// Incident.js
-const mongoose = require("mongoose");
+const mongoose = require('mongoose');
 
 const incidentSchema = new mongoose.Schema({
-    type: { type: String, required: true },
-    description: { type: String, required: true },
-    location: { type: String, required: true },
-    createdAt: { type: Date, default: Date.now }
+    title: {
+        type: String,
+        required: true
+    },
+    description: {
+        type: String,
+        required: true
+    },
+    location: {
+        type: String,
+        required: true
+    },
+    date: {
+        type: Date,
+        default: Date.now
+    }
 });
 
-module.exports = mongoose.model("Incident", incidentSchema);
+module.exports = mongoose.model('Incident', incidentSchema);
